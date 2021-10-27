@@ -6,5 +6,8 @@ namespace DiskPartitionInfo
     {
         public static IMbrReader ReadMbr()
             => new MbrReader();
+
+        public static IGptReaderLocation ReadGpt()
+            => new GptReader();
     }
 }
